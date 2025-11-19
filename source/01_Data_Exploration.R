@@ -7,6 +7,9 @@ library(patchwork)
 library(readr)
 
 # ==== Read data files =====
+
+setwd("~/GitHub/60923_Ricketts")
+
 # From processed_data folder
 fticr_data <- read_csv("processed_data/Processed_FTICR_60923_Data.csv")
 names(fticr_data)[1] = 'molecular_formula'

@@ -19,7 +19,7 @@ metadata = read_csv('processed_data/Metadata_Ricketts.csv') %>%
   clean_names()
 
 # From data_from_EMSL_data_Central folder
-coordinates <- read_csv("data_from_EMSL_data_Central/Coordinates.csv")%>%
+coordinates <- read_csv("Coordinates.csv")%>%
   mutate(
     proposal_id = as.character(proposal_id),
     sampling_set = as.character(sampling_set)
